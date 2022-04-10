@@ -24,7 +24,10 @@ export default function Footer() {
             </Col>
              <Row xs={2} md={2} style={{ margin: "auto" }}>
                  <Col>
+                 <Link to='https://github.com/krishnapal2545/iirA/blob/master/app.apk'>
                  <img src={process.env.PUBLIC_URL + "images/android.png"} alt="" style={{maxWidth:"120px",margin:"1% 0%"}} />
+                 </Link>
+                 
                  </Col>
                  <Col>
                  <img src={process.env.PUBLIC_URL + "images/ios.svg"} alt="" style={{maxWidth:"200px", margin:"1% 0%"}} />
