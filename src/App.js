@@ -5,6 +5,7 @@ import AdminPage from "./components/admin";
 import HomePage from "./components/home";
 import Dashboard from "./components/Admin/dashboard";
 import FoodList from "./components/Admin/foodlist";
+import UserList from "./components/Admin/userlist";
 
 export default function App() {
   
@@ -20,6 +21,7 @@ export default function App() {
           { admin && (<>
           <Route path="/admin/dashboard" element={<Dashboard/>}/> 
           <Route path="/foodlist" element={<FoodList/>}/> 
+          <Route path="/userlist" element={<UserList/>}/> 
           </>)
           }
           
