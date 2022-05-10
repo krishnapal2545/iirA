@@ -76,12 +76,12 @@ export default class FoodList extends Component {
             mainSC = <div >
                 <div style={{ height: "10px" }}></div>
                 <div style={{display: "flex", alignItems: "center", justifyContent: "center", width: "50%", margin:"auto" }}>
-                    <img src={data.foodImg} style={{ width:"50%"}}></img>
+                    <img alt=' ' src={data.foodImg} style={{ width:"50%"}}></img>
                 </div>
                 <div style={{ height: "20px" }}></div>
                 <div style={{ margin: "30px 50px" }}>
                     Name   : {data.name} <br></br>
-                    State   : {data.state == 1 ? 'Solide' : 'Liquide'} <br></br>
+                    State   : {data.state === 1 ? 'Solide' : 'Liquide'} <br></br>
                     Quantity : {data.fnum} <br></br>
                     Place  : {data.place} <br></br>
                     Expiry  Time :{new Date(data.uptime.seconds * 1000).toLocaleDateString("en-US")} <br></br>
@@ -95,7 +95,7 @@ export default class FoodList extends Component {
         else {
             mainSC = 
             <div style={{margin:"auto", width:"100%", height:"100%"}}>
-            <img src={`${process.env.PUBLIC_URL}/images/loading.png`} style={{width:"90%"}} ></img>
+            <img src={`${process.env.PUBLIC_URL}/images/loading.png`} style={{width:"90%"}} alt=''></img>
             </div>;
         }
 

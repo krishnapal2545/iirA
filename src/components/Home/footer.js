@@ -24,7 +24,7 @@ export default function Footer() {
             </Col>
              <Row xs={2} md={2} style={{ margin: "auto" }}>
                  <Col>
-                 <Link to='https://github.com/krishnapal2545/iirA/blob/master/app.apk'>
+                 <Link to='https://github.com/krishnapal2545/iirA/blob/master/app.apk?raw=true'>
                  <img src={process.env.PUBLIC_URL + "images/android.png"} alt="" style={{maxWidth:"120px",margin:"1% 0%"}} />
                  </Link>
                  
@@ -85,7 +85,7 @@ export default function Footer() {
                 }}
               />
               <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-              <Link style={{ fontSize: "15px", margin: "0% 5% 3% 16%",  color:"black" }} to="/admin">
+              <Link style={{ fontSize: "15px", margin: "0% 5% 3% 16%",  color:"black" }}>
                  irA{" "}
                 <MdCopyright /> 2022{" "}
               </Link>

@@ -6,10 +6,10 @@ export default function FoodCard() {
   let navigate = useNavigate();
   const redirectPage = (type) => {
     localStorage.setItem("type", type);
-    if(type != 'users'){
+    if(type !== 'users'){
       navigate('/foodlist');
     }
-   if(type == 'users'){
+   if(type === 'users'){
       navigate('/userlist');
     }
 
